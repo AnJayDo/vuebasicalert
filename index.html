@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>CodePen - vue-basic-alert</title>
-  <link rel="icon" href="favicon.ico" sizes="16x16 32x32">
+  <link rel="icon" href="https://jasonanger.github.io/vuebasicalert/favicon.ico" sizes="16x16 32x32">
   <script src="https://unpkg.com/vue@3.2.14/dist/vue.global.prod.js"></script>
 </head>
+
 <body>
   <div class="logo">
-    <div><h1 class="header">Welcome to Vue Basic Alert</h1></div>
-    <img src="vue-basic-alert.svg" alt="Vue Basic Alert logo" style="
-        max-width: 60%;
-        width: 300px;
-        display: block;
-        margin: 10px auto;
-    ">
-    <style>
-      .logo {
-          margin: 60px 0px;
-      }
-    </style>
+    <div>
+      <h1 class="header">Welcome to Vue Basic Alert</h1>
+      <p style="margin-top: -20px;" class="paragraph">Basic Vue Alert Component for basic use cases written by <a href="https://github.com/JasonAnger/" target="_blank" rel="noopener noreferrer">Jason Anger</a></p>
+    </div>
+    <img src="https://jasonanger.github.io/vuebasicalert/vue-basic-alert.svg" alt="Vue Basic Alert logo">
   </div>
   <div id="app"></div>
 
@@ -29,5 +24,29 @@
     import CodePenVueComponent from "./script.js";
     Vue.createApp(CodePenVueComponent).mount('#app');
   </script>
+  <style>
+    .logo h1.header {
+      font-size: 2rem;
+      color: #34495e;
+    }
+
+    a {
+      color: #2aa36a !important;
+      text-decoration: none;
+      text-shadow: 2px 0px 10px #2aa36a;
+    }
+
+    .logo {
+      margin: 60px 0px;
+    }
+
+    .logo>img {
+      max-width: 60%;
+      width: 300px;
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
 </body>
+
 </html>
